@@ -2,4 +2,126 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+    min-height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% );
+    padding: 2rem;
+    margin-inline: auto;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 1rem;
+    color: #222;
+}
+
+/*HEADER PART STYLES*/
+header{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.day{
+    margin-left: 1rem;
+    opacity: 0.5;
+}
+
+
+/*MAIN STYLES*/
+main{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+/*FORM PART STYLES*/
+form{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 255px;
+    background-color: #fff;
+}
+.input-text{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 12px;
+}
+
+
+/*FILTER PART STYLES*/
+.filter{
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    margin-left: 1rem;
+    background-color: #fff;
+}
+main select option{
+    padding: 1rem;
+    background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% );
+}
+
+/*CARDS PART STYLES*/
+.cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 6px 0  6px 12px;
+    height: 40px;
+}
+
+/*BUTTONS STYLES*/
+.btn{
+    border: none;
+    outline: none;
+    transition: background-color .3s;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    padding: 6px 12px;
+}
+.btn:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+.edit-btn{
+    background-color: orange;
+}
+.check-btn{
+    margin-left: 2rem;
+    background-color: green;
+}
+.trash-btn{
+    background-color: red;
+}
+.edit-btn:hover{
+    color: orange;
+}
+.check-btn:hover{
+    color: green;
+}
+.trash-btn:hover{
+    color: red;
+}
+.add-btn{
+    background-color: orangered;
+}
+.add-btn:hover{
+    color: orangered;
 }

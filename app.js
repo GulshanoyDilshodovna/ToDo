@@ -42,7 +42,6 @@ function addTodo(e){
 document.addEventListener('click', (e)=>{
    if(e.target.classList.value == 'trash-btn btn'){
        const removeBtn = document.querySelector('.trash-btn')
-       console.log(removeBtn);
        removeBtn.parentElement.remove()
    }
 })

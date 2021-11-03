@@ -3,9 +3,6 @@
 const form = document.querySelector('form')
 const inpuText = document.getElementById('input-text')
 const addBtn = document.getElementById('add-btn')
-const checkBtn = document.getElementById('check-btn')
-const editBtn = document.getElementById('edit-btn')
-const trashBtn = document.getElementById('trash-btn')
 const todoCards = document.querySelector('.cards')
 
 inpuText.focus()
@@ -36,13 +33,14 @@ function addTodo(e){
     `
     //appenChild
     todoCards.appendChild(todoDiv)
+
     inpuText.value = ''
 }
 
 document.addEventListener('click', (e)=>{
    if(e.target.classList.value == 'trash-btn btn'){
-       const removeBtn = document.querySelector('.trash-btn')
-       removeBtn.parentElement.remove()
+       const trashBtn = document.querySelector('.trash-btn')
+       trashBtn.parentElement.remove()
    }
 })
 

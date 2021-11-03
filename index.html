@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TO DO (01.11.2021) | Gulshanoy</title>
     <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--NORMALIZE CSS-->
-    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/normalize.css" />
     <!--CSS-->
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
     <!--HEADER PART-->
     <header>
-            <h2>ToDo List</h2>
-            <p class="day">02.11.2021</p>
+      <h2>ToDo List</h2>
+      <p class="day">02.11.2021</p>
     </header>
 
     <main>
-        <!--FORM PART-->
-                <form>
-                    <input placeholder="Add new ToDo" type="text" class="input-text" id="input-text" >
-                    <button class="add-btn btn" id="add-btn"><i class="fas fa-plus"></i></button>
-                </form>
-        <!--FILTER PART-->
-                    <select class="filter" id="filter">
-                        <option value="all">All</option>
-                        <option value="completed">Completed</option>
-                        <option value="uncompleted">Uncompleted</option>
-                    </select>
+      <!--FORM PART-->
+      <form>
+        <input
+          placeholder="Add new ToDo"
+          type="text"
+          class="input-text"
+          id="input-text"
+        />
+        <button class="add-btn btn" id="add-btn">
+          <i class="fas fa-plus"></i>
+        </button>
+      </form>
+      <!--FILTER PART-->
+      <div class="filter">
+        <select name="todos" id="filter">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+        <!-- <button class="btn option-btn" id="option-btn">
+            <i class="fas fa-caret-square-down"></i>
+        </button> -->
+      </div>
     </main>
 
     <!--TODO ITEMS-->
-            <div class="cards">
-                <div class="card">
-                    <p class="todo-text">Reading books</p>
-                    <button class="check-btn btn" id="check-btn"><i class="fas fa-check"></i></button>
-                    <button class="edit-btn btn" id="edit-btn"><i class="fas fa-edit"></i></button>
-                    <button class="trash-btn btn" id="trash-btn"><i class="fas fa-trash"></i></button>
-                </div>
-            </div>
+    <div class="cards">
+        <div class="card">
+            <p class="todo-text">Writing codes</p>
+            <button class="check-btn btn" id="check-btn">
+              <i class="fas fa-check"></i>
+            </button>
+            <button class="edit-btn btn" id="edit-btn">
+              <i class="fas fa-edit"></i>
+            </button>
+            <button class="trash-btn btn" id="trash-btn">
+              <i class="fas fa-trash"></i>
+            </button>
+        </div>
+    </div>
 
     <!--JavaScript-->
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
